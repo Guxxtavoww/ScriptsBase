@@ -16,7 +16,6 @@ public class FadeController : MonoBehaviour
 
     private float tempo;
 
-
    void Awake()
     {
         instanciaFade = this; 
@@ -45,6 +44,6 @@ public class FadeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("Vai corno");
     }
 }

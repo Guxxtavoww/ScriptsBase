@@ -34,7 +34,5 @@ public class CameraController : MonoBehaviour
 
             transform.position = Vector3.Lerp(transform.position, new Vector3(playerX, playerY, -10), smooth);
         }
-
-
     }
 }

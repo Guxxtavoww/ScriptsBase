@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class IASlug : MonoBehaviour
 {
-    public Transform        enemie;
-    public SpriteRenderer   enemieSprite;
-    public Transform[]      position;
-    public float            speed;
-    public bool             isRight;
+    public Transform enemie;
+    public SpriteRenderer enemieSprite;
+    public Transform[] position;
+    public float speed;
+    public bool isRight;
     public bool visivel;
-    private int             idTarget = 1;
+    private int idTarget = 1;
     public bool isActive = false;
 
     // Start is called before the first frame update
@@ -18,14 +18,14 @@ public class IASlug : MonoBehaviour
     {
         enemie.position = position[0].position;
         idTarget = 1;
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         visivel = enemie != null ? enemieSprite.isVisible : null as Transform;
-        
+
 
         //Debug.Log(visivel);
 
@@ -55,8 +55,6 @@ public class IASlug : MonoBehaviour
                 }
             }
 
-
-
             if (position[idTarget].position.x < enemie.position.x && isRight)
             {
                 Flip();
@@ -72,20 +70,11 @@ public class IASlug : MonoBehaviour
             return;
         }
     }
-
-
-
-      
     
-
-    void Flip ()
+    void Flip()
     {
 
         isRight = !isRight;
         enemieSprite.flipX = !enemieSprite.flipX;
-        
-    
     }
-
-
 }
