@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour
     public float offsetX = 3f;
     public float smooth = 0.1f;
 
-    //Limites da camera.
+    //Limites da camera. 8===>
     public float limiteUp;
     public float limiteDown;
     public float limiteLeft;
